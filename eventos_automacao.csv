@@ -1,0 +1,23 @@
+hora,modo,comando,pv_kw,soc_%
+00:00,OCIOSO,Sem veiculos conectados; banco em repouso,0.0,55.0
+02:10,HIBRIDO,Sem geracao solar: atende a demanda pela rede,0.0,55.0
+04:06,OCIOSO,Sem veiculos conectados; banco em repouso,0.0,55.0
+06:51,HIBRIDO,Complementa a geracao solar com energia da rede,11.35,59.5
+07:37,100% SOLAR,Chaveia carga para 100% fotovoltaico; rede em standby,22.0,59.5
+07:40,HIBRIDO,Complementa a geracao solar com energia da rede,21.77,59.5
+07:55,100% SOLAR,Chaveia carga para 100% fotovoltaico; rede em standby,22.31,59.5
+08:20,OCIOSO,Sem veiculos conectados; excedente direcionado ao banco,25.87,61.9
+09:08,100% SOLAR,Chaveia carga para 100% fotovoltaico; rede em standby,27.54,80.2
+12:13,HIBRIDO,Complementa a geracao solar com energia da rede,41.18,100.0
+13:05,ILHADO,Abre o disjuntor de rede e opera pelo banco de baterias,47.6,99.5
+13:35,HIBRIDO,Complementa a geracao solar com energia da rede,47.03,88.0
+13:58,100% SOLAR,Chaveia carga para 100% fotovoltaico; rede em standby,47.05,88.4
+14:19,OCIOSO,Sem veiculos conectados; excedente direcionado ao banco,45.28,97.3
+14:21,100% SOLAR,Chaveia carga para 100% fotovoltaico; rede em standby,45.9,98.1
+16:54,OCIOSO,Sem veiculos conectados; excedente direcionado ao banco,21.18,100.0
+17:21,100% SOLAR,Chaveia carga para 100% fotovoltaico; rede em standby,11.2,100.0
+17:30,HIBRIDO,Complementa a geracao solar com energia da rede,10.19,100.0
+17:48,ECONOMIA,Limita potencia dos pontos e prioriza veiculo de menor SoC,6.82,98.6
+18:34,HIBRIDO,Sem geracao solar: atende a demanda pela rede,0.0,75.6
+18:55,SOLAR+BANCO,Sem geracao solar: atende a demanda pelo banco de baterias,0.0,65.4
+21:00,HIBRIDO,Sem geracao solar: atende a demanda pela rede,0.0,22.2

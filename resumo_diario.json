@@ -1,0 +1,22 @@
+{
+  "energia_entregue_kwh": 459.83,
+  "energia_solar_gerada_kwh": 365.74,
+  "energia_solar_direta_kwh": 248.01,
+  "energia_bateria_kwh": 89.79,
+  "energia_rede_kwh": 122.04,
+  "solar_armazenada_kwh": 60.61,
+  "curtailment_kwh": 57.11,
+  "participacao_renovavel_%": 73.5,
+  "sessoes_concluidas": 16,
+  "energia_media_por_sessao_kwh": 28.57,
+  "duracao_media_sessao_min": 120,
+  "custo_energia_rs": 104.98,
+  "custo_sem_greenvolt_rs": 394.41,
+  "economia_rs": 289.43,
+  "co2_evitado_kg": 13.01,
+  "minutos_modo_economia": 46,
+  "minutos_modo_ilhado": 30,
+  "minutos_sem_rede_com_sol": 521,
+  "soc_final_bateria_%": 22.2,
+  "energia_ciclada_bateria_kwh": 89.79
+}
