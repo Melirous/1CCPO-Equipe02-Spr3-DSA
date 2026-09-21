@@ -1,8 +1,6 @@
-# 1CCPO-Equipe02-Spr3-DSA
-
 # Sprint 3 — Sistema de Gerenciamento de Estação de Recarga
 
-## Integrantes
+# Integrantes:
 - João Victor Canello Ferian - RM573295
 - Lucas Klein - RM570029
 - Gustavo Melo dos Santos - RM573562
