@@ -1,8 +1,3 @@
-# Sprint 3 - Sistema de Gerenciamento de Estacao de Recarga
-# Python / Google Colab
-# Implementa: classe, lista, funcoes, busca sequencial, Bubble Sort,
-# estatisticas, validacoes e analise de complexidade.
-
 class Sessao:
     def __init__(self, id_sessao, veiculo, energia, tempo, custo,
                  carregador="AC", data="Nao informada", horario="Nao informado",
@@ -28,10 +23,7 @@ class Sessao:
         print(f"Horario: {self.horario}")
         print(f"Status: {self.status}")
 
-
-# Lista principal de sessoes
 sessoes = []
-
 
 def ler_inteiro(mensagem, minimo=None):
     while True:
@@ -119,8 +111,6 @@ def listar_sessoes(sessoes):
 
 
 def busca_sequencial(sessoes, id_procurado):
-    # Busca implementada manualmente.
-    # Complexidade de pior caso: O(n).
     for i in range(len(sessoes)):
         if sessoes[i].id == id_procurado:
             return i
@@ -147,8 +137,6 @@ def buscar_sessao(sessoes):
 
 
 def bubble_sort(sessoes, criterio):
-    # Bubble Sort implementado manualmente.
-    # Complexidade de pior caso: O(n^2).
     n = len(sessoes)
 
     for i in range(n):
@@ -164,14 +152,13 @@ def bubble_sort(sessoes, criterio):
                 deve_trocar = a.energia > b.energia
             elif criterio == "custo":
                 deve_trocar = a.custo > b.custo
-            else:  # tempo
+            else:
                 deve_trocar = a.tempo > b.tempo
 
             if deve_trocar:
                 sessoes[j], sessoes[j + 1] = sessoes[j + 1], sessoes[j]
                 trocou = True
 
-        # Otimizacao: se nenhuma troca ocorreu, a lista ja esta ordenada.
         if not trocou:
             break
 
@@ -243,7 +230,6 @@ def mostrar_estatisticas(sessoes):
 
 
 def carregar_dados_exemplo(sessoes):
-    # Funcao opcional para facilitar a demonstracao no Google Colab.
     exemplos = [
         Sessao(1, "EV-001", 32.50, 75, 39.90, "AC", "21/09/2026", "08:30"),
         Sessao(2, "EV-002", 48.20, 95, 58.40, "DC", "21/09/2026", "10:15"),
@@ -311,6 +297,4 @@ def menu():
         else:
             print("Opcao invalida. Escolha uma opcao do menu.")
 
-
-# Execute a proxima linha no Google Colab para iniciar o sistema:
-# menu()
+menu()
