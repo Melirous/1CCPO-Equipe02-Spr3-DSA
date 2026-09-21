@@ -66,9 +66,9 @@ Dessa forma, o sistema consegue trabalhar com várias sessões simultaneamente.
 
 ---
 
-# 2. Funcionamento geral do programa
+# 2. Funcionamento geral
 
-O programa possui um **menu interativo** que permanece funcionando até que o usuário escolha a opção de encerramento.
+O programa possui um menu que permanece funcionando até que o usuário escolha a opção de encerramento.
 
 O menu principal possui as seguintes opções:
 
@@ -145,9 +145,6 @@ O usuário pode escolher entre:
 ```
 
 A ordenação é realizada utilizando o algoritmo **Bubble Sort**, implementado manualmente.
-
-Não são utilizadas as funções `sort()` ou `sorted()` para substituir o algoritmo solicitado.
-
 ---
 
 ## Estatísticas
@@ -192,8 +189,6 @@ def busca_sequencial(sessoes, id_procurado):
 
     return -1
 ```
-
-## Como funciona?
 
 A Busca Sequencial percorre os elementos da lista um por um.
 
@@ -269,8 +264,6 @@ def bubble_sort(sessoes, criterio):
             break
 ```
 
-## funcionamento
-
 O Bubble Sort compara elementos que estão lado a lado.
 
 Quando o elemento da esquerda é maior que o elemento da direita, os dois são trocados.
@@ -300,8 +293,6 @@ No projeto, o algoritmo pode comparar diferentes atributos da classe `Sessao`, p
 
 # 5. Análise Big-O dos dois algoritmos
 
-A análise de complexidade permite compreender como o número de operações dos algoritmos aumenta conforme aumenta a quantidade de sessões armazenadas.
-
 ## Busca Sequencial — O(n)
 
 A Busca Sequencial possui complexidade de **O(n)** no pior caso.
@@ -322,15 +313,6 @@ Se houver:
 1.000 sessões → até 1.000 verificações
 ```
 
-Portanto, o número de verificações cresce aproximadamente na mesma proporção que o tamanho da lista.
-
-### Complexidade
-
-```text
-Busca Sequencial
-Pior caso: O(n)
-```
-
 ---
 
 ## Bubble Sort — O(n²)
@@ -346,25 +328,6 @@ for i in range(n):
 
 O primeiro laço controla as passagens pela lista, enquanto o segundo realiza as comparações entre os elementos.
 
-De forma simplificada:
-
-```text
-n elementos
-↓
-aproximadamente n comparações
-↓
-repetidas em várias passagens
-↓
-crescimento quadrático
-```
-
-### Complexidade
-
-```text
-Bubble Sort
-Pior caso: O(n²)
-```
-
 ---
 
 ## Comparação das complexidades
@@ -379,21 +342,3 @@ A diferença pode ser observada conforme o número de sessões aumenta.
 Na Busca Sequencial, se o número de sessões dobrar, o número máximo de verificações também cresce aproximadamente na mesma proporção.
 
 No Bubble Sort, o crescimento é mais rápido porque existem comparações realizadas dentro de laços aninhados.
-
----
-
-# Conclusão
-
-O projeto transforma o simulador inicial em um sistema capaz de trabalhar com múltiplas sessões de recarga.
-
-A utilização da classe `Sessao` permite organizar os dados de cada recarga, enquanto a lista possibilita armazenar várias sessões.
-
-O sistema também aplica dois algoritmos estudados na disciplina:
-
-```text
-Busca Sequencial → O(n)
-
-Bubble Sort → O(n²)
-```
-
-Dessa maneira, o projeto demonstra a relação entre **estrutura de dados, algoritmos, quantidade de operações e desempenho**, permitindo compreender como a escolha de um algoritmo influencia o funcionamento do sistema conforme a quantidade de dados aumenta.
